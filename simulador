@@ -1,0 +1,12 @@
+senha_cadastrada = "1234"  # Senha padrão (pode ser alterada)
+
+for tentativa in range(3, 0, -1):
+    senha_digitada = input("Digite a senha para inicializar o celular: ")
+    if senha_digitada == senha_cadastrada:
+        print("Bem-vindo.")
+        break
+    else:
+        print(f"Senha incorreta. Você tem {tentativa - 1} tentativas restantes.")
+
+else:
+    print("Número máximo de tentativas excedido. O celular está bloqueado.")
